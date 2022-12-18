@@ -34,7 +34,7 @@ def get_greeting_filter(greeting: str) -> BaseFilter:
 
 
 def main() -> None:
-    updater = Updater("5912895122:AAGKZ3M8AF5f5ewCY1WfAp0YDlWRN4SmoyM")
+    updater = Updater("My-token")
 
     updater.dispatcher.add_handler(CommandHandler("help", help_command))
     updater.dispatcher.add_handler(MessageHandler(get_greeting_filter('привет'), ru))
